@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <div>
-      <b-navbar toggleable="lg" type="dark">
+      <b-navbar toggleable="lg" type="dark" variant="primary">
         <b-navbar-nav class="m-2">
           <b-nav-item to="/">Home</b-nav-item>
           <b-nav-item to="/about-us">About us</b-nav-item>
@@ -32,7 +32,6 @@ body {
   color: #2c3e50;
 }
 .navbar {
-  background: #034f9b;
   margin-bottom: 40px;
 }
 nav {
@@ -41,9 +40,8 @@ nav {
 nav a {
   padding: 10px;
   text-decoration: none;
-  background: #ffffff1a;
   border-radius: 3px;
-  color: rgb(231, 232, 233);
+  color: #fff !important;
   font-weight: bold;
   margin-right: 15px;
 }

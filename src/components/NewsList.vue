@@ -1,7 +1,6 @@
 <template>
   <div>
-    <div class="hello"><h1>News</h1></div>
-
+    <h1>News Feed</h1>
     <div class="m-5 inline">
       <label class="sr-only" for="inline-form-input-name"></label>
       <b-form-input
@@ -11,7 +10,7 @@
         v-model="search"
       ></b-form-input>
     </div>
-    <div class="alignright">
+    <div class="filter-container">
       <b-form-select
         v-model="orderByDataKey"
         :options="dataKeyInputOptions"
@@ -88,11 +87,7 @@ export default {
 };
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-h3 {
-  margin: 40px 0 0;
-}
 ul {
   list-style-type: none;
   padding: 0;
@@ -109,22 +104,24 @@ a {
   bottom: 20px;
   right: 20px;
   border-radius: 50%;
-  width: 80px;
-  height: 80px;
-  font-size: 50px;
+  width: 60px;
+  height: 60px;
+  font-size: 40px;
   display: grid;
   align-content: center;
   align-items: center;
   justify-content: center;
 }
-.alignright {
+.filter-container {
   text-align: right;
-  margin: 0 3rem;
+  margin: 24px 3rem;
 }
 select {
-  border: 1px #034f9b solid;
-  margin: 0 2px;
-  font: inherit;
-  font-size: 16px;
+  margin: 0 4px;
+  font-size: 18px !important;
+  width: 150px;
+  height: 36px;
+  padding: 0 14px;
+  color: inherit;
 }
 </style>

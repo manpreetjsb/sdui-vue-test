@@ -111,3 +111,10 @@ export default {
   },
 };
 </script>
+<style>
+.close {
+  border: none;
+  background: transparent;
+  font-size: 30px;
+}
+</style>
