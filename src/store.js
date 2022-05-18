@@ -22,7 +22,6 @@ const store = new Vuex.Store({
     },
     UPDATE_NEWS(state, payload) {
       const getDataWithoutID = state.news.filter((n) => n.id !== payload.id);
-      console.log(getDataWithoutID);
       state.news = [...getDataWithoutID, payload];
     },
   },

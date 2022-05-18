@@ -85,7 +85,6 @@ export default {
       event.preventDefault();
       if (this.newsId) {
         const updatedNews = { ...this.form, id: this.newsId };
-        console.log(updatedNews);
         this.updateNews(updatedNews);
       } else {
         const newNews = { ...this.form, id: uuidv4() };
